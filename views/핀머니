@@ -1,0 +1,16 @@
+ var ctx = document.getElementById('myChart2').getContext('2d');
+            var myPieChart = new Chart(ctx, {
+                type: 'pie', data: {
+                    labels: ['용돈', '알바비', '기타'],
+
+                    datasets: [{
+                        backgroundColor: [
+                            'rgba(255, 99, 132, 0.2)',
+                            'rgba(54, 162, 235, 0.2)',
+                            'rgba(255, 206, 86, 0.2)',
+                        ],
+                        label: 'My First dataset2',
+                        data: [<%=Pinmoney %>, <%=Salary %>, <%=etc2 %>]
+                    }]
+                }
+            })

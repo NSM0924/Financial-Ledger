@@ -1,0 +1,42 @@
+@charset "utf-8";
+/* 태그 초기화 */
+* { margin: 0; padding: 0; }
+a { text-decoration: none; color: inherit;}
+a:link, a:visited, a:active { color: #888; }
+img { vertical-align: middle; }
+
+.site-header { border-bottom: 1px solid #888;  }
+
+.logo { display: flex; justify-content: space-between; }
+.logo a { margin: 0 auto; text-align: center;}
+
+
+.nav a { display: block; transition: 0.3s; }
+.nav>ul { display: flex; list-style: none; justify-content: center; margin: 0 auto;}
+
+.nav>ul>li>a { padding: 0 40px; line-height: 50px; height: 50px; font-size: 17px; }
+.nav>ul>li:hover>a { color: #fff; background: #4a4948; }
+
+.canvas_box {
+    display : block;
+    
+}
+
+
+.a{
+    margin: 30px 30px 0 0;
+    padding: 10px;
+}
+
+#chart{
+    width: 550px;
+    height: 550px;
+    margin: 150px 0 0 30px;
+}
+
+@media (min-width: 1000px) {
+    .canvas_box {
+        display : flex;
+        justify-content: space-between;
+    }
+}
